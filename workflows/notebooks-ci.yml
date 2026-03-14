@@ -1,0 +1,67 @@
+name: Notebooks CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'notebooks/**'
+      - 'binder/**'
+      - 'requirements.txt'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'notebooks/**'
+
+jobs:
+  test-notebooks:
+    name: Execute notebooks (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11']
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install mechanicsdsl-core jupyter nbconvert nbformat pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Execute all notebooks
+        run: |
+          for nb in notebooks/*.ipynb; do
+            echo "Executing: $nb"
+            jupyter nbconvert --to notebook --execute "$nb" \
+              --ExecutePreprocessor.timeout=300 \
+              --output "/tmp/$(basename $nb)"
+          done
+
+      - name: Check for errors
+        run: |
+          for nb in /tmp/*.ipynb; do
+            python3 -c "
+          import json, sys
+          nb = json.load(open('$nb'))
+          errors = []
+          for cell in nb['cells']:
+              for output in cell.get('outputs', []):
+                  if output.get('output_type') == 'error':
+                      errors.append(output['ename'] + ': ' + output['evalue'])
+          if errors:
+              print('ERRORS in $nb:')
+              for e in errors: print(' ', e)
+              sys.exit(1)
+          else:
+              print('OK: $nb')
+          "
+          done
