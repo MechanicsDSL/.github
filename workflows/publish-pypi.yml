@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       test_pypi:
-        description: 'Publish to TestPyPI instead of PyPI'
+        description: 'Publish to PyPI'
         type: boolean
         default: false
 
