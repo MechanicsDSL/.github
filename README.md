@@ -1,5 +1,15 @@
 # .github
 
+## Who's Using MechanicsDSL?
+
+We can see from our download analytics that MechanicsDSL is being used across **54+ countries** and mirrored by institutions worldwide — but PyPI doesn't tell us who you are.
+
+If you're using MechanicsDSL in research, education, industry, or a personal project, we'd love to hear from you. It takes 60 seconds and helps guide the project's direction.
+
+**[→ Tell us about your use case](https://tally.so/r/XxqOqP)**
+
+*All responses are voluntary and confidential. We will not contact you without permission.*
+
 Organization-wide configuration, templates, and profile for the [MechanicsDSL](https://github.com/MechanicsDSL) GitHub organization.
 
 ---
