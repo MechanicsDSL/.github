@@ -68,11 +68,9 @@ That's it. The compiler handles symbolic derivation, conservation law detection,
 
 ## Adoption
 
-Since release on PyPI, MechanicsDSL has accumulated **8,300+ downloads across 54 countries**, with institutional mirrors (bandersnatch, Nexus, devpi) confirmed in multiple national research computing environments. The package is published with a formal Zenodo DOI ([10.5281/zenodo.17771040](https://doi.org/10.5281/zenodo.17771040)) and is the subject of ongoing peer-reviewed research:
+Since release on PyPI, MechanicsDSL has accumulated **11,000+ downloads across 66 countries**, with institutional mirrors (bandersnatch, Nexus, devpi) confirmed in multiple national research computing environments. The package is published with a formal Zenodo DOI ([10.5281/zenodo.17771040](https://doi.org/10.5281/zenodo.17771040)) and is the subject of ongoing peer-reviewed research:
 
 > Parsons, N. *Decoupling Programming from Physics: A Compiler-Based Approach to Teaching Lagrangian Mechanics.* Under review at **American Journal of Physics** (submitted January 2026).
-
-> Parsons, N. *MechanicsDSL: A Compiler-Based Domain-Specific Language for Automated Physics Simulation in Python.* In preparation, **PEARC26 RSE Track** (deadline March 30, 2026).
 
 ---
 
