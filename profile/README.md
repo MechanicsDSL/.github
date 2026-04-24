@@ -18,19 +18,6 @@
   <a href="https://mybinder.org/v2/gh/MechanicsDSL/mechanicsdsl-notebooks/main"><img src="https://mybinder.org/badge_logo.svg" alt="Binder"></a>
 </p>
 
-
-## Who's Using MechanicsDSL?
-
-We can see from our download analytics that MechanicsDSL is being used across **54+ countries** and mirrored by institutions worldwide — but PyPI doesn't tell us who you are.
-
-If you're using MechanicsDSL in research, education, industry, or a personal project, we'd love to hear from you. It takes 60 seconds and helps guide the project's direction.
-
-**[→ Tell us about your use case](https://tally.so/r/XxqOqP)**
-
-*All responses are voluntary and confidential. We will not contact you without permission.*
-
----
-
 ## What Is MechanicsDSL?
 
 MechanicsDSL is an open-source computational physics organization building a full compiler toolchain for physical simulation. Our flagship package lets researchers, engineers, and educators define physical systems in natural, LaTeX-inspired notation — and automatically derives equations of motion, handles constraints, identifies conservation laws, and generates high-performance simulation code for 12+ target platforms.
