@@ -19,7 +19,7 @@
 
 ## What is MechanicsDSL?
 
-MechanicsDSL is a domain-specific language and compiler for physical systems. You write a Lagrangian or Hamiltonian in a LaTeX-inspired syntax; the symbolic engine (built on SymPy) derives the equations of motion automatically, and the compiler generates simulation code in your choice of thirteen target languages.
+MechanicsDSL is a domain-specific language and compiler for physical systems. You write a Lagrangian or Hamiltonian in a LaTeX-inspired syntax; the symbolic engine (built on SymPy) derives the equations of motion automatically, and the compiler generates simulation code in your choice of twelve target languages, plus a JAX runtime backend for GPU-accelerated, differentiable simulation.
 
 The project is developed and maintained by [Noah Parsons](https://github.com/GuiloScion).
 
@@ -31,7 +31,7 @@ The project is developed and maintained by [Noah Parsons](https://github.com/Gui
 
 | Repository | Description |
 |------------|-------------|
-| [**mechanicsdsl**](https://github.com/MechanicsDSL/mechanicsdsl) | Core DSL compiler, symbolic engine, eight physics domains, thirteen code generation backends, JAX/GPU support, LSP server, Jupyter magic commands, FastAPI server. |
+| [**mechanicsdsl**](https://github.com/MechanicsDSL/mechanicsdsl) | Core DSL compiler, symbolic engine, twelve physics domains, twelve code-generation backends plus a JAX runtime backend, LSP server, Jupyter magic commands, FastAPI server. |
 
 ### Deployment and integration
 
@@ -45,14 +45,14 @@ The project is developed and maintained by [Noah Parsons](https://github.com/Gui
 
 | Repository | Description |
 |------------|-------------|
-| [**mechanicsdsl-notebooks**](https://github.com/MechanicsDSL/mechanicsdsl-notebooks) | Jupyter notebooks across all eight MechanicsDSL physics domains. Double pendulum (chaos, Lyapunov), coupled oscillators (normal modes, beating), constraints (Baumgarte), central forces (Kepler), Hamiltonian mechanics (phase space, symplectic integration). Binder-launchable. |
+| [**mechanicsdsl-notebooks**](https://github.com/MechanicsDSL/mechanicsdsl-notebooks) | Worked-example Jupyter notebooks covering a selection of MechanicsDSL topics: double pendulum (chaos, Lyapunov), coupled oscillators (normal modes, beating), constraints (Baumgarte), central forces (Kepler), and Hamiltonian mechanics (phase space, symplectic integration). Binder-launchable. |
 | [**mechanicsdsl-datasets**](https://github.com/MechanicsDSL/mechanicsdsl-datasets) | Reference datasets for physics parameter estimation and inverse problem benchmarking. Includes synthetic trajectories for pendulum, double pendulum, and coupled oscillators, with CSV, HDF5, metadata, and validation scripts. |
 
 ---
 
 ## Adoption
 
-Since release on PyPI, MechanicsDSL has accumulated 13,000+ downloads across 67 countries, with institutional mirrors (bandersnatch, Nexus, devpi) observed in multiple national research computing environments. The package is published with a Zenodo DOI ([10.5281/zenodo.17771040](https://doi.org/10.5281/zenodo.17771040)).
+Since release on PyPI, MechanicsDSL has accumulated 18,000+ cumulative downloads across 71 countries (per Google BigQuery). This figure spans direct installs and institutional mirrors such as bandersnatch, Nexus, and devpi, so it reflects total download traffic rather than unique users. The package is published with a Zenodo DOI ([10.5281/zenodo.17771040](https://doi.org/10.5281/zenodo.17771040)).
 
 ---
 
