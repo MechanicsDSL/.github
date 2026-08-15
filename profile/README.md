@@ -52,7 +52,7 @@ The project is developed and maintained by [Noah Parsons](https://github.com/Gui
 
 ## Adoption
 
-Measured via Google BigQuery (the public PyPI download dataset), MechanicsDSL has ~790 organic installs (via pip/uv, excluding CI) across 16 countries — the best available proxy for genuine usage. Total file requests come to ~18,000 across 71 countries, but that figure is dominated by automatic PyPI mirrors (e.g. bandersnatch) and direct/web traffic, so it overstates real adoption. The package is published with a Zenodo DOI ([10.5281/zenodo.17771040](https://doi.org/10.5281/zenodo.17771040)).
+Measured via Google BigQuery (the public PyPI download dataset), MechanicsDSL has 495 organic installs from 838 raw, across 18 countries. Raw counts exclude automated clients — mirrors, CI runners, and requests without a reported installer — under the PyPI installer.name/null exclusion rule. Total file requests come to ~18,000 across 71 countries, but that figure is dominated by automatic PyPI mirrors (e.g. bandersnatch) and direct/web traffic, so it overstates real adoption. The package is published with a Zenodo DOI ([10.5281/zenodo.17771040](https://doi.org/10.5281/zenodo.17771040)).
 
 ---
 
