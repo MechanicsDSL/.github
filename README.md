@@ -17,7 +17,7 @@ Organization-wide configuration, templates, and profile for the [MechanicsDSL](h
 
 ## Organization Overview
 
-MechanicsDSL is a compiler-based computational physics framework. Physical systems are described in LaTeX-inspired DSL notation; the compiler derives equations of motion symbolically, handles constraints, identifies conservation laws via Noether's theorem, and generates executable simulation code for 12+ target platforms.
+MechanicsDSL is a compiler-based computational physics framework. Physical systems are described in LaTeX-inspired DSL notation; the compiler derives equations of motion symbolically, handles constraints, identifies conservation laws via Noether's theorem, and generates executable simulation code for 12 target platforms.
 
 **Repositories:**
 
