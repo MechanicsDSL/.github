@@ -100,6 +100,5 @@ All MechanicsDSL repositories are released under the MIT License unless otherwis
   <a href="https://mechanicsdsl.readthedocs.io">Docs</a> ·
   <a href="https://github.com/MechanicsDSL/mechanicsdsl">Core repo</a> ·
   <a href="https://doi.org/10.5281/zenodo.17771040">Zenodo</a> ·
-  <a href="https://pypi.org/project/mechanicsdsl-core/">PyPI</a> ·
-  <a href="https://pypi.org/project/mechanicsdsl-datasets/">Datasets on PyPI</a>
+  <a href="https://pypi.org/project/mechanicsdsl/">PyPI</a> ·
 </p>
